@@ -2,6 +2,7 @@
 1. This is typescript based project helps you to get started with SharePoint Framework. This solution containing CRUD operations performed on SharePoint List.
 2. Create custom SharePoint list named "TestList" with default Title field. Add some custom data in it.
 3. Before making this spfx solution to work, make sure that you set up your development environment first.For that follow this detailed steps provided on url https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment.
+# Crud-Operation-SPFX
 
 ### Building the code
 1. Download the code and fire the command "npm install" to install all the dependencies of this project.
@@ -29,5 +30,5 @@ This package produces the following:Crud-Operation
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-# Crud-Operation-SPFX
+
 
