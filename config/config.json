@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "sp-get-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spGetData/SpGetDataWebPart.js",
+          "manifest": "./src/webparts/spGetData/SpGetDataWebPart.manifest.json"
+        }
+      ]
+    },
+    "crud-operation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/crudOperation/CrudOperationWebPart.js",
+          "manifest": "./src/webparts/crudOperation/CrudOperationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jquery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "toastr": {
+      "path":"https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
+      "globalName": "toastr",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "SpGetDataWebPartStrings": "lib/webparts/spGetData/loc/{locale}.js",
+    "CrudOperationWebPartStrings": "lib/webparts/crudOperation/loc/{locale}.js"
+  }
+}
